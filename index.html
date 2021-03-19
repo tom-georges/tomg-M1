@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Tom Georges Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          Tom Georges
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+      <a href="etude.html">
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Etude.jfif)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">My studies in a  business school.</div>
+          </div>
+        </div>
+      </a>
+      
+      <a href="stage.html">
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/SG.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle"> My internship in one of the most important bank.</div>
+          </div>
+        </div>
+      </a>
+
+     <a href="Paypaletude.html">
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Paypal.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+            
+            <div class="subtitle"> In the contexte of my strategic and management course we have created this folder about waht paypal can do in the future .</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="ecology.html">
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Ecologie.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">Bicycompost, You feel concerned about ecology, look at this folder.</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="coding.html">
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Coding.jfif)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">The coding skill i developed during my html course with Le wagon.</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="uniqlo.html">
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Uniqlo.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">The devolpment of a new product for Uniqlo in a case of project management  .</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="vapiano.html">
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Restaurant.jfif)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">My internship in vapiano restaurants as an assistant manager.</div>
+          </div>
+        </div>
+      </a>
+
+      <a href=finance.html>
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Finance.jfif)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+             
+            </div>
+
+            <div class="subtitle">My personnal acitvities in finance.</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="crossfit.html">
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Crossfit.jfif)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">Why i like crossfit.</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="music.html">
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Musique.jfif)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+             
+            </div>
+
+            <div class="subtitle">Why i like musique.</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="aroundtheworld.html">
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Voyage.jfif)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">Around the world.</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="videogames.html">
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Games.jfif)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+                                                                                                                                              
+            </div>
+
+            <div class="subtitle">Video games.</div>
+          </div>
+        </div>
+      </a>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
